@@ -1,1 +1,6 @@
 Disgusting.pem
+lib/
+bin/
+include/
+.Python
+pip-selfcheck.json
