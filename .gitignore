@@ -4,3 +4,5 @@ bin/
 include/
 .Python
 pip-selfcheck.json
+env/
+requirements.txt

@@ -2,11 +2,12 @@ from flask import Flask, jsonify
 from flask_cors import CORS, cross_origin
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/api/*": {"origins": "*"}})
 
+#globals
 opinions = {"marth":"disgusting"}
 
-@app.route('/')
+@app.route('/api')
 def index():
     return "Welcome to the memes!"
 
